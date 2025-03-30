@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_repositorios", "lib_rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_dominio", "lib_dominio\lib_dominio.csproj", "{08457758-73D5-4823-8721-3FD8F2BBF533}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ut_clientes", "ut_clientes\ut_clientes.csproj", "{476B5DA6-88A6-40EB-8E43-C5636CE90D21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{08457758-73D5-4823-8721-3FD8F2BBF533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08457758-73D5-4823-8721-3FD8F2BBF533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08457758-73D5-4823-8721-3FD8F2BBF533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476B5DA6-88A6-40EB-8E43-C5636CE90D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476B5DA6-88A6-40EB-8E43-C5636CE90D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476B5DA6-88A6-40EB-8E43-C5636CE90D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476B5DA6-88A6-40EB-8E43-C5636CE90D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9CDB536B-DEB6-45AD-9295-5A3C4459CA2C} = {85D08C98-28A0-46A4-9138-E665B5B6E3BB}
 		{08457758-73D5-4823-8721-3FD8F2BBF533} = {6E67452E-7177-4DFA-A897-8A7AF1EA8587}
+		{476B5DA6-88A6-40EB-8E43-C5636CE90D21} = {0D2BBDF3-E321-4B4F-BED0-C0AF3746A95F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57B5035A-64C5-412C-800D-7F62761F95BB}
