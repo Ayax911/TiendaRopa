@@ -40,8 +40,8 @@ namespace ut_clientes.Repositorios
         }
         public bool Modificar()
         {
-            this.entidad!.Cedula =
-            (this.entidad.Cedula);
+            this.entidad!.Cedula = "11111";
+            
             var entry = this.iConexion!.Entry<Clientes>(this.entidad);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
