@@ -7,7 +7,7 @@ namespace lib_dominio.Entidades
         public int Id { get; set; }
         public string? Nombre { get; set; }
         public string? Material { get; set; }
-        public double ValorUnitario { get; set; }
+        public decimal ValorUnitario { get; set; }
 
         //FK
         public int Marcas { get; set; }

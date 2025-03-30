@@ -6,7 +6,7 @@ namespace lib_dominio.Entidades
     {
         public int Id { get; set; }
         public int Cantidad { get; set; }
-        public double ValorBruto { get; set; }
+        public decimal ValorBruto { get; set; }
 
         //FK
         public int Compras { get; set; }

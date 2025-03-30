@@ -8,7 +8,7 @@ namespace lib_dominio.Entidades
         public int Id { get; set; }
         public DateTime? Fecha { get; set; }
         public string? Codigo { get; set; }
-        public double ValorTotal { get; set; }
+        public decimal ValorTotal { get; set; }
 
         //FK
         public int Clientes { get; set; }
