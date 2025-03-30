@@ -63,19 +63,19 @@ CREATE TABLE [DetallesCompras] (
 
 -- Insertar en Clientes
 INSERT INTO Clientes (Cedula, Nombre, Telefono)  
-VALUES ('1012345678', 'Juan P√©rez', '3204567890');  
+VALUES ('1012345678', 'Juan PÈrez', '3204567890');  
 
 -- Insertar en Sucursales
 INSERT INTO Sucursales (Nombre, Direccion)  
-VALUES ('Tienda Bogot√° Centro', 'Cra 7 #12-34, Bogot√°');  
+VALUES ('Tienda Bogot· Centro', 'Cra 7 #12-34, Bogot·');  
 
 -- Insertar en Lugares
 INSERT INTO Lugares (Nombre, CodigoPostal)  
-VALUES ('Bogot√°', '110111');  
+VALUES ('Bogot·', '110111');  
 
--- Insertar en M√©todos de Pago
+-- Insertar en MÈtodos de Pago
 INSERT INTO MetodosPagos (Nombre, Estado)  
-VALUES ('Tarjeta de Cr√©dito', 1);  
+VALUES ('Tarjeta de CrÈdito', 1);  
 
 -- Insertar en Compras (corregida la fecha)
 INSERT INTO Compras (Fecha, Codigo, ValorTotal, Cliente, Sucursal, MetodoPago, Lugar)  
@@ -91,7 +91,7 @@ VALUES ('RopaFina', '900123456');
 
 -- Insertar en Productos
 INSERT INTO Productos (Nombre, Material, ValorUnitario, Marca)  
-VALUES ('Camiseta Polo', 'Algod√≥n', 50000.00, 1);  
+VALUES ('Camiseta Polo', 'AlgodÛn', 50000.00, 1);  
 
 -- Insertar en DetallesCompras
 INSERT INTO DetallesCompras (Cantidad, ValorBruto, Compra, Producto)  
