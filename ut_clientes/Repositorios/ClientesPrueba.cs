@@ -3,6 +3,7 @@ using lib_dominio.Entidades;
 using lib_repositorios.Implementaciones;
 using lib_repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging.Abstractions;
 using ut_clientes.Nucleo;
 
 namespace ut_clientes.Repositorios
@@ -10,6 +11,29 @@ namespace ut_clientes.Repositorios
     [TestClass]
     public class ClientesPrueba
     {
+        #region obj cliente prueba
+        private Clientes clientePrueba = new Clientes
+         {
+            //Id = 1,
+            Cedula = "1234567890",
+            Nombre = "Juan Pérez",
+            Telefono = "3001234567",
+            Compras = new List<Compras>
+            {
+                new Compras
+                {
+                    //Id = 1,
+                    Fecha = DateTime.Now,
+                    Codigo = "COMPRA001",
+                    ValorTotal = 250000,
+                    //Cliente = 1,
+                    //Sucursal = 1,
+                    //MetodoPago = 1,
+                    //Lugar = 1
+                }
+            }
+         };
+        #endregion
         private readonly IConexion? iConexion;
         private List<Clientes>? lista;
         private Clientes? entidad;
@@ -33,8 +57,9 @@ namespace ut_clientes.Repositorios
         }
         public bool Guardar()
         {
+            this.entidad = this.clientePrueba;
             this.entidad = EntidadesNucleo.Clientes();
-            this.iConexion!.Clientes!.Add(this.entidad);
+            this.iConexion!.Clientes!.Add(!String.IsNullOrEmpty(this.entidad.ToString()) ? this.entidad : this.clientePrueba);
             this.iConexion!.SaveChanges();
             return true;
         }
