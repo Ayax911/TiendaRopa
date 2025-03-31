@@ -19,7 +19,8 @@ namespace ut_clientes.Nucleo
 
         public static void Cargar()
         {
-            if (!File.Exists(DatosGenerales.ruta_json))
+            string ruta_json = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @""+DatosGenerales.ruta_json);
+            if (!File.Exists(ruta_json))
                 return;
             datos = new Dictionary<string, string>();
             StreamReader jsonStream = File.OpenText(DatosGenerales.ruta_json);
