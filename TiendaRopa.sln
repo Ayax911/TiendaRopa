@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		secretos.json = secretos.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ut_proveedores", "ut_proveedores\ut_proveedores.csproj", "{C660BE52-6C9C-4409-AE8D-0412C752F78D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ut_marcas", "ut_proveedores\ut_marcas.csproj", "{C660BE52-6C9C-4409-AE8D-0412C752F78D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
