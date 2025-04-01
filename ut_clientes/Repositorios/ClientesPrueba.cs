@@ -4,9 +4,9 @@ using lib_repositorios.Implementaciones;
 using lib_repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
-using ut_clientes.Nucleo;
+using ut_compras.Nucleo;
 
-namespace ut_clientes.Repositorios
+namespace ut_compras.Repositorios
 {
     [TestClass]
     public class ClientesPrueba

@@ -3,17 +3,17 @@ using lib_dominio.Entidades;
 using lib_repositorios.Implementaciones;
 using lib_repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using ut_marcas.Nucleo;
+using ut_compras.Nucleo;
 
-namespace ut_marcas.Repositorios
+namespace ut_compras.Repositorios
 {
     [TestClass]
-    public class MarcasPrueba
+    public class ComprasPrueba
     {
         private readonly IConexion? iConexion;
-        private List<Marcas>? lista;
-        private Marcas? entidad;
-        public MarcasPrueba()
+        private List<Compras>? lista;
+        private Compras? entidad;
+        public ComprasPrueba()
         {
             iConexion = new Conexion();
             iConexion.StringConexion = Configuracion.ObtenerValor("StringConexion");
@@ -28,30 +28,30 @@ namespace ut_marcas.Repositorios
         }
         public bool Listar()
         {
-            lista = iConexion!.Marcas!.ToList();
+            this.lista = this.iConexion!.Compras!.ToList();
             return lista.Count > 0;
         }
         public bool Guardar()
         {
-            entidad = EntidadesNucleo.Marcas();
-            iConexion!.Marcas!.Add(entidad);
-            iConexion!.SaveChanges();
+            this.entidad = EntidadesNucleo.Compras(this.iConexion!);
+            this.iConexion!.Compras!.Add(this.entidad!);
+            this.iConexion!.SaveChanges();
             return true;
         }
         public bool Modificar()
         {
-            entidad!.Nit = "33333";
+            this.entidad!.Codigo = "Compras Modificado";
 
 
-            var entry = iConexion!.Entry(entidad);
+            var entry = this.iConexion!.Entry<Compras>(this.entidad);
             entry.State = EntityState.Modified;
-            iConexion!.SaveChanges();
+            this.iConexion!.SaveChanges();
             return true;
         }
         public bool Borrar()
         {
-            iConexion!.Marcas!.Remove(entidad!);
-            iConexion!.SaveChanges();
+            this.iConexion!.Compras!.Remove(this.entidad!);
+            this.iConexion!.SaveChanges();
             return true;
         }
     }

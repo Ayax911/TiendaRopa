@@ -1,7 +1,7 @@
 ﻿
 using lib_dominio.Nucleo;
 
-namespace ut_marcas.Nucleo
+namespace ut_compras.Nucleo
 {
 
     public class Configuracion

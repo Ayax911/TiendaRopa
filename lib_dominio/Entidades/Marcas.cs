@@ -9,7 +9,6 @@ namespace lib_dominio.Entidades
         public string? Nombre { get; set; }
         public string? Nit { get; set; }
 
-
         public List<Productos>? Productos { get; set; }
 
     }
