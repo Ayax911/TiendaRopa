@@ -3,7 +3,7 @@ using lib_dominio.Entidades;
 using lib_repositorios.Implementaciones;
 using lib_repositorios.Interfaces;
 
-namespace ut_clientes.Nucleo
+namespace ut_productos.Nucleo
 {
     public class EntidadesNucleo
     {

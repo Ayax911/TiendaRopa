@@ -3,9 +3,9 @@ using lib_dominio.Entidades;
 using lib_repositorios.Implementaciones;
 using lib_repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using ut_clientes.Nucleo;
+using ut_productos.Nucleo;
 
-namespace ut_clientes.Repositorios
+namespace ut_productos.Repositorios
 {
     [TestClass]
     public class ProductosPrueba

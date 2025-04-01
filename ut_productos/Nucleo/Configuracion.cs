@@ -1,7 +1,7 @@
 ﻿
 using lib_dominio.Nucleo;
 
-namespace ut_clientes.Nucleo
+namespace ut_productos.Nucleo
 {
 
     public class Configuracion

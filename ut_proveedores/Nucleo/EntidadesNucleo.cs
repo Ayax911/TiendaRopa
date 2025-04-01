@@ -1,7 +1,7 @@
 ﻿
 using lib_dominio.Entidades;
 
-namespace ut_clientes.Nucleo
+namespace ut_marcas.Nucleo
 {
     public class EntidadesNucleo
     {
