@@ -15,7 +15,7 @@ namespace ut_clientes.Nucleo
             entidad.Nombre = "ArturoCalle";
             entidad.Material = "Lino";
             entidad.ValorUnitario = 100000;
-            entidad.Marcas = marca!.Id; 
+            entidad.Marca = marca!.Id; 
 
             return entidad;
         }
